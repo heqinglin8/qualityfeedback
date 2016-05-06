@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一级导航文字点击颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时的图片背景 -->
+    <item android:state_checked="true" android:color="@color/bgcolor12"/>
+    <!-- 单击时的背景图片 -->
+    <item android:state_pressed="true" android:color="@color/bgcolor12"/>
+    
+    <item android:state_selected="true" android:color="@color/bgcolor12"/>
+    <!-- 默认时的背景图片 -->
+    <item android:color="@color/textcolor03"/>
+
+</selector>

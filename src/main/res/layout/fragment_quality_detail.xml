@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ahlib_common_topbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/ahlib_common_left_title_right_layout" />
+
+    <include layout="@layout/divider_1p"/>
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+        android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+             <LinearLayout
+                 android:id="@+id/guzhang_bar_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="44dp"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal"
+                 android:paddingRight="15dp">
+
+                 <com.autohome.plugin.quality.view.ObservableHorizontalScrollView
+                     android:id="@+id/guzhang_bar_scrollview"
+                     android:layout_width="0dp"
+                     android:layout_height="@dimen/ah_common_top_tabs_hight"
+                     android:layout_weight="1.0"
+                     android:scrollbars="none"
+                     android:fillViewport="false">
+
+                     <RadioGroup
+                         android:id="@+id/guzhang_radiogroup"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/ah_common_top_tabs_hight"
+                         android:gravity="center_vertical"
+                         android:orientation="horizontal"
+                         android:paddingLeft="2.5dp"
+                         android:paddingRight="2.5dp" >
+                     </RadioGroup>
+
+                 </com.autohome.plugin.quality.view.ObservableHorizontalScrollView>
+
+                 <ImageView
+                     android:id="@+id/guzhang_album"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_gravity="center_vertical"
+                     android:src="@mipmap/but_menu"
+                     android:visibility="gone"
+                     />
+             </LinearLayout>
+
+             <include layout="@layout/divider_1p"/>
+
+                <com.autohome.mainlib.common.view.AHLoadProgressWebView
+                    android:id="@+id/common_brower_WebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+         </LinearLayout>
+
+        <com.autohome.mainlib.common.view.AHErrorLayout
+            android:id="@+id/topic_page_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

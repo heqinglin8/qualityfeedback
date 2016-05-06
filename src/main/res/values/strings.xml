@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">质量评价</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--文字部分加粗示例-->
+    <string name="styled_text"><b>第8页</b>20%</string>
+</resources>

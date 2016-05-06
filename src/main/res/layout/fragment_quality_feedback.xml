@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ahlib_common_topbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/ahlib_common_left_title_right_layout" />
+
+    <include layout="@layout/divider_1p"/>
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.autohome.mainlib.common.view.AHLoadProgressWebView
+            android:id="@+id/common_brower_WebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <com.autohome.mainlib.common.view.AHErrorLayout
+            android:id="@+id/topic_page_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
